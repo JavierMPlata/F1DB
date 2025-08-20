@@ -6,8 +6,8 @@ class f1dbExtract:
     def __init__(self, csv_path):
         self.csv = csv_path
 
-def queries(self):
-    self.data = pd.read_csv(self.csv)
+    def queries(self):
+        self.data = pd.read_csv(self.csv)
 
-def response(self):
-    return self.data.head(5)
+    def response(self):
+        return self.data.head(5)
