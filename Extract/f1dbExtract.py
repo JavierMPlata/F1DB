@@ -1,6 +1,6 @@
 import requests 
 import pandas as pd
-import numpay as np
+import numpy as np
 
 class f1dbExtract:
     def __init__(self, csv_path):
