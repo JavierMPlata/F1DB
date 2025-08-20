@@ -7,7 +7,7 @@ class f1dbExtract:
         self.csv = csv_path
 
 def queries(self):
-    data = pd.read_csv(self.csv)
+    self.data = pd.read_csv(self.csv)
 
 def response(self):
-    return data.head(5)
+    return self.data.head(5)
