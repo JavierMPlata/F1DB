@@ -1,10 +1,13 @@
-import requests
+import requests 
+import pandas as pd
+import numpay as np
 
-url = "https://ipinfo.io/190.60.194.114/json"
+class f1dbExtract:
+    def __init__(self, csv_path):
+        self.csv = csv_path
 
-try:
-    response = requests.get(url)
-    data = response.json()
-    print(data)
-except:
-    print("Hubo un error al obtener los datos.")
+def queries(self):
+    data = pd.read_csv(self.csv)
+
+def response(self):
+    return data.head(5)
