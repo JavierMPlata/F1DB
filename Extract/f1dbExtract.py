@@ -1,6 +1,6 @@
-import requests 
+import requests
 import pandas as pd
-import numpy as np
+import numpy
 
 class f1dbExtract:
     def __init__(self, csv_path):
@@ -8,6 +8,7 @@ class f1dbExtract:
 
     def queries(self):
         self.data = pd.read_csv(self.csv)
+        self.data = self.data.info()
 
     def response(self):
         return self.data.head(5)
